@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raw Production</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -18,21 +25,19 @@
               },
               fontFamily : {    
                 bebas: ['EB Garamond', 'serif'],
+                montesa: ['Montserrat', 'sans-serif'],
               },
             },
           },
         };
       </script>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- navbar Start -->
     <nav class="bg-whites h-20 fixed top-0 left-0 right-0">
-      <div class="flex justify-between items-center h-20 w-full max-w-7xl mx-auto font-bebas  font-semibold ">
+      <div class="flex justify-between items-center h-20 w-full max-w-7xl mx-auto font-bebas font-semibold px-5">
         <h1 class="text-2xl">RAW PRODUCTION</h1>
-        <ul class="flex gap-9 text-lg">
+        <ul class="flex gap-8 text-lg">
             <li>ABOUT US</li>
             <li>OUR MOVIES</li>
             <li>SERVICES</li>
@@ -41,16 +46,20 @@
     </nav>
     <!-- navbar End -->
 
-    <main>
-        <!-- Banner Start -->
-        <section class="h-screen bg-red-500 mt-20">
-            
-        </section>
-        <!-- Banner End -->
-    </main>
-        
-    
-            
+    <!-- Banner Start -->
+    <section class="h-screen pt-20 bg-[url('./images/banner.jpg')] bg-cover">
+        <div class="h-full w-full max-w-7xl mx-auto px-5 flex items-center">
+          <div class="font-bebas">
+            <h3 class="text-lg text-whites">Movie production studio</h3>
+            <h1 class="text-7xl text-whites">Films MAde to</h1>
+            <h1 class="text-7xl text-yellow font-bebas mb-5">Perfection</h1>
+            <p class="font-montesa text-whites max-w-lg mb-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut  elit tellus, 
+            luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <button class="text-whites text-lg border-2 border-whites px-3 py-2 hover:bg-yellow hover:border-yellow hover:text-black hover:transition-all">Discover More</button>
+          </div>
+        </div>
+    </section>
+    <!-- Banner End -->        
     </section>
 </body>
 </html>
